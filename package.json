@@ -1,0 +1,16 @@
+{
+  "name": "found-c",
+  "version": "5.0.2",
+  "private": true,
+  "scripts": {
+    "start-server": "yarn --cwd ./packages/server run start",
+    "start-client": "yarn --cwd ./packages/client run start",
+    "test-server": "yarn --cwd ./packages/server run test",
+    "test-client": "yarn --cwd ./packages/client run test-ci",
+    "test": "yarn run test-client && yarn run test-server",
+    "build": "yarn run build-client && yarn run build-server",
+    "build-client": "yarn --cwd ./packages/client run build",
+    "build-server": "yarn --cwd ./packages/server run build",
+    "serve": "yarn --cwd ./packages/server run serve"
+  }
+}
